@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WebAssembly Example</title>
+  </head>
+  <body>
+    <div id="app">
+      <label>
+        Input your name
+        <input id="name" type="text" placeholder="Input your name" />
+      </label>
+      <button id="say-hello" type="button">Say hello</button>
+      <button id="say-hello-with-alert" type="button">
+        Say hello with alert
+      </button>
+      <div id="response"></div>
+    </div>
+
+    <script type="module" src="/src/init-wasm.ts"></script>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>
